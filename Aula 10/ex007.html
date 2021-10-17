@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando valores</title>
+    <style>
+        body{
+            font: 20pt arial normal;
+            text-align: center;
+            margin-top: 35vh;
+        }
+
+        #resP{
+            margin-top: 20px
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" name="input1" id="input1">
+    <input type="number" name="input2" id="input2">
+    <input type="button" value="Somar" onclick="somar()">
+    <!--<h2>Soma é igual a: <span>0</span></h2>-->
+    <div id="resP" >A resposta é igual a 0</div>
+    <script>
+        function somar(){
+            let tn1 = document.getElementById('input1') 
+            let tn2 = document.getElementById('input2')
+            let n1 = Number(tn1.value)
+            let n2 = Number(tn2.value)
+            let s = n1 + n2
+            let res = document.getElementById('resP') 
+            //let res = document.querySelector('span')
+            //res.innerText = s
+            res.innerHTML = `A resposta é igual a <strong>${s}</strong>`
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: 20pt Helvetica normal;
+            text-align: center;
+            margin-top: 35vh;
+        }
+
+        #res {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Você é brasileiro ?</h1>
+    Digite aqui seu país: <input type="text" name="p" id="p">
+
+    <input type="button" onclick="check()" value='Checar'>
+
+    <div id="res">
+    </div>
+    <script>
+
+        function check() {
+
+            var pais = document.getElementById('p')
+
+            var res = document.getElementById('res')
+
+            var paisf = String(p.value)
+
+            res.innerHTML += `<p>Este é o seu país: ${paisf}</p>`
+
+            if (paisf == 'Brasil' || paisf == 'brasil') {
+                res.innerHTML += `<p>Você é brasileiro!`
+            } else {
+                res.innerHTML += `<p>Você é estrangeiro!</p>`
+            }
+        }
+
+    </script>
+</body>
+
+</html>

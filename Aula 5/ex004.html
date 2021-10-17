@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 50px sans-serif;
+            background-image: linear-gradient(120deg,#c93fec,#823fec);
+            color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nome = window.prompt('Qual o seu nome ?')
+        document.writeln(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras!</br>`)
+        document.writeln(`Seu nome em maiúsculas é ${nome.toUpperCase()}</br>`)
+        document.writeln(`Seu nome em minúsculas é ${nome.toLowerCase()}`)
+    </script>
+</body>
+</html>
+<!--
+> n1 = 1545.5
+1545.5
+> n1.toFixed(2)
+1545.50
+> n1.toFixed(2).replace('.', ',')
+'1545,50'
+> n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) Muda para o formato monetario br
+'R$ 1.545,50'
+> n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'}) Americano
+'US$ 1.545,50'
+> n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'}) Espanhol
+'€ 1.545,50'
+-->
